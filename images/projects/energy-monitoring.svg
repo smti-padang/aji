@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#fff" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <text x="400" y="245" text-anchor="middle" font-size="120">⚡</text>
+  <text x="400" y="350" text-anchor="middle" font-family="Poppins, sans-serif" font-size="34" font-weight="700" fill="#ffffff">Energy Monitoring</text>
+  <text x="400" y="395" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" fill="#ffffff" opacity="0.7">replace with project screenshot</text>
+</svg>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Rivera — Automation Engineer Portfolio</title>
+  <meta name="description" content="Portofolio Alex Rivera, Automation Engineer berfokus pada PLC, SCADA, robotics integration, dan Industry 4.0." />
+  <meta name="theme-color" content="#030014" />
+
+  <meta property="og:title" content="Alex Rivera — Automation Engineer Portfolio" />
+  <meta property="og:description" content="PLC, SCADA, robotics & Industry 4.0 — building reliable systems that make factories think." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-wrap" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#Home" class="nav-logo" data-id-brand>AlexRivera</a>
+
+      <ul class="nav-links">
+        <li><a href="#Home" class="nav-link active" data-section="Home">Home</a></li>
+        <li><a href="#About" class="nav-link" data-section="About">About</a></li>
+        <li><a href="#Portofolio" class="nav-link" data-section="Portofolio">Portofolio</a></li>
+        <li><a href="#Contact" class="nav-link" data-section="Contact">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+
+    <div class="nav-mobile" id="navMobile">
+      <a href="#Home" class="nav-mlink" data-section="Home">Home</a>
+      <a href="#About" class="nav-mlink" data-section="About">About</a>
+      <a href="#Portofolio" class="nav-mlink" data-section="Portofolio">Portofolio</a>
+      <a href="#Contact" class="nav-mlink" data-section="Contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HOME / HERO -->
+  <section id="Home" class="section section-home">
+    <div class="container hero-grid">
+      <div class="hero-left reveal" data-reveal="left">
+        <div class="status-badge">
+          <span class="dot"></span>
+          <span class="grad-text">Ready to Automate</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="title-line"><span class="grad-soft">Automation</span></span>
+          <span class="title-line"><span class="grad-text">Engineer</span></span>
+        </h1>
+
+        <div class="typing-row">
+          <span id="typing"></span>
+          <span class="caret"></span>
+        </div>
+
+        <p class="hero-desc">
+          Hi, I'm <strong data-id-name>Alex Rivera</strong> — membangun sistem otomasi industri
+          yang andal, terhubung, dan cerdas — dari shop-floor PLC hingga arsitektur Industry 4.0
+          berbasis data.
+        </p>
+
+        <div class="tech-pills">
+          <span class="tech-pill">PLC</span>
+          <span class="tech-pill">SCADA</span>
+          <span class="tech-pill">Robotics</span>
+          <span class="tech-pill">OPC UA</span>
+        </div>
+
+        <div class="cta-row">
+          <a href="#Portofolio" class="btn btn-primary"><span>Projects →</span></a>
+          <a href="#Contact" class="btn btn-ghost"><span>Contact</span></a>
+        </div>
+
+        <!-- Sosial diisi otomatis dari config.js -->
+        <div class="social-row" data-socials></div>
+      </div>
+
+      <div class="hero-right reveal" data-reveal="right">
+        <div class="automation-scene">
+          <!-- Outer rotating gear -->
+          <svg class="gear gear-lg" viewBox="0 0 200 200" aria-hidden="true">
+            <defs>
+              <linearGradient id="gearGrad1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6366f1"/>
+                <stop offset="100%" stop-color="#a855f7"/>
+              </linearGradient>
+            </defs>
+            <path fill="none" stroke="url(#gearGrad1)" stroke-width="2" stroke-linejoin="round"
+              d="M100 10 L112 14 L116 4 L130 10 L130 22 L142 26 L150 18 L162 30 L156 40 L164 50 L176 48 L182 62 L172 70 L176 82 L188 86 L186 102 L174 104 L172 116 L182 124 L174 138 L162 134 L154 144 L158 156 L144 162 L138 152 L126 156 L124 168 L108 170 L104 158 L92 158 L86 168 L72 162 L74 150 L62 144 L52 152 L42 140 L48 130 L40 120 L28 122 L24 108 L34 100 L24 92 L28 78 L40 80 L48 70 L42 58 L54 48 L62 56 L74 50 L72 38 L86 32 L92 42 L100 40 Z M100 70 a30 30 0 1 0 0.01 0 Z"/>
+          </svg>
+
+          <!-- Mid counter-rotating gear -->
+          <svg class="gear gear-md" viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="34" fill="none" stroke="rgba(168,85,247,0.55)" stroke-width="1.5" stroke-dasharray="6 6"/>
+            <circle cx="50" cy="50" r="22" fill="none" stroke="rgba(99,102,241,0.6)" stroke-width="1.5"/>
+            <g stroke="rgba(168,85,247,0.7)" stroke-width="2" stroke-linecap="round">
+              <line x1="50" y1="6"  x2="50" y2="16"/>
+              <line x1="50" y1="84" x2="50" y2="94"/>
+              <line x1="6"  y1="50" x2="16" y2="50"/>
+              <line x1="84" y1="50" x2="94" y2="50"/>
+              <line x1="20" y1="20" x2="27" y2="27"/>
+              <line x1="73" y1="73" x2="80" y2="80"/>
+              <line x1="80" y1="20" x2="73" y2="27"/>
+              <line x1="27" y1="73" x2="20" y2="80"/>
+            </g>
+          </svg>
+
+          <!-- Profile photo center -->
+          <div class="profile-wrap">
+            <div class="profile-glow"></div>
+            <div class="profile-ring">
+              <div class="profile-photo">
+                <img data-photo-hero alt="Profile photo" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Robot arm (top-left) -->
+          <svg class="robot-arm" viewBox="0 0 120 120" aria-hidden="true">
+            <defs>
+              <linearGradient id="armGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#a855f7"/>
+                <stop offset="100%" stop-color="#06b6d4"/>
+              </linearGradient>
+            </defs>
+            <!-- base -->
+            <rect x="10" y="100" width="40" height="12" rx="3" fill="url(#armGrad)" opacity="0.85"/>
+            <circle cx="30" cy="100" r="6" fill="#0a0420" stroke="url(#armGrad)" stroke-width="2"/>
+            <!-- arm group rotating at shoulder -->
+            <g class="arm-shoulder" style="transform-origin: 30px 100px;">
+              <rect x="26" y="50" width="8" height="52" rx="3" fill="url(#armGrad)"/>
+              <circle cx="30" cy="50" r="5" fill="#0a0420" stroke="url(#armGrad)" stroke-width="2"/>
+              <g class="arm-elbow" style="transform-origin: 30px 50px;">
+                <rect x="28" y="14" width="6" height="40" rx="2" fill="url(#armGrad)"/>
+                <circle cx="31" cy="16" r="4" fill="#0a0420" stroke="url(#armGrad)" stroke-width="2"/>
+                <!-- gripper -->
+                <g style="transform-origin: 31px 16px;" class="arm-gripper">
+                  <line x1="27" y1="10" x2="22" y2="4" stroke="url(#armGrad)" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="35" y1="10" x2="40" y2="4" stroke="url(#armGrad)" stroke-width="2.5" stroke-linecap="round"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+
+          <!-- Conveyor belt (bottom) with moving boxes -->
+          <div class="conveyor" aria-hidden="true">
+            <div class="belt"></div>
+            <div class="box box-a"></div>
+            <div class="box box-b"></div>
+            <div class="box box-c"></div>
+          </div>
+
+          <!-- Signal pulses -->
+          <div class="signal sig-1"></div>
+          <div class="signal sig-2"></div>
+          <div class="signal sig-3"></div>
+
+          <!-- Floating tech badges -->
+          <div class="float-badge fb-1"><span>PLC</span></div>
+          <div class="float-badge fb-2"><span>Robotics</span></div>
+          <div class="float-badge fb-3"><span>OPC UA</span></div>
+          <div class="float-badge fb-4"><span>SCADA</span></div>
+
+          <!-- Status HUD -->
+          <div class="hud-card">
+            <div class="hud-row"><span class="hud-dot"></span><span>SYSTEM ONLINE</span></div>
+            <div class="hud-bar"><div class="hud-fill"></div></div>
+            <div class="hud-meta"><span>CYCLE</span><span class="hud-num">98.7%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="About" class="section">
+    <div class="container">
+      <div class="section-header reveal" data-reveal="up">
+        <h2 class="section-title grad-text">About Me</h2>
+        <p class="section-sub">✦ Transforming ideas into automated experiences ✦</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal" data-reveal="left">
+          <h3>
+            <span class="grad-text">Hello, I'm</span>
+            <span class="about-name" data-id-name>Alex Rivera</span>
+          </h3>
+
+          <p>
+            Saya seorang Automation Engineer dengan pengalaman membangun sistem kontrol industri,
+            integrasi robotik, dan arsitektur smart manufacturing. Fokus saya: sistem yang
+            <em>robust</em>, <em>maintainable</em>, dan <em>future-ready</em>.
+          </p>
+
+          <blockquote class="about-quote">
+            "Otomasi terbaik bukan yang menggantikan manusia, tapi yang membebaskannya untuk berpikir."
+          </blockquote>
+
+          <div class="about-cta">
+            <a href="#" class="btn btn-primary">Download CV</a>
+            <a href="#Portofolio" class="btn btn-outline">View Projects</a>
+          </div>
+        </div>
+
+        <div class="about-photo reveal" data-reveal="right">
+          <div class="photo-glow"></div>
+          <div class="photo-ring">
+            <div class="photo-inner">
+              <img data-photo-about alt="About photo" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card reveal" data-reveal="left">
+          <div class="stat-top">
+            <div class="stat-icon">⚙</div>
+            <span class="stat-value" data-count="40">0</span>
+          </div>
+          <p class="stat-label">Total Projects</p>
+          <div class="stat-foot"><span>Sistem otomasi yang dikirim</span></div>
+        </div>
+
+        <div class="stat-card reveal" data-reveal="up" data-delay="100">
+          <div class="stat-top">
+            <div class="stat-icon">🏆</div>
+            <span class="stat-value" data-count="12">0</span>
+          </div>
+          <p class="stat-label">Certificates</p>
+          <div class="stat-foot"><span>Skill profesional tervalidasi</span></div>
+        </div>
+
+        <div class="stat-card reveal" data-reveal="right" data-delay="200">
+          <div class="stat-top">
+            <div class="stat-icon">🌐</div>
+            <span class="stat-value" data-count="6">0</span>
+          </div>
+          <p class="stat-label">Years of Experience</p>
+          <div class="stat-foot"><span>Continuous learning journey</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTOFOLIO -->
+  <section id="Portofolio" class="section">
+    <div class="container">
+      <div class="section-header reveal" data-reveal="up">
+        <h2 class="section-title grad-text">Portfolio Showcase</h2>
+        <p class="section-sub-plain">
+          Jelajahi perjalanan saya melalui proyek, sertifikasi, dan tech stack — setiap bagian
+          adalah tonggak dalam jalur belajar yang berkelanjutan.
+        </p>
+      </div>
+
+      <div class="tabs-wrap reveal" data-reveal="up">
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-tab="projects" role="tab">
+            <svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+            </svg>
+            <span class="tab-label">Projects</span>
+          </button>
+          <button class="tab" data-tab="certificates" role="tab">
+            <svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+            </svg>
+            <span class="tab-label">Certificates</span>
+          </button>
+          <button class="tab" data-tab="tech" role="tab">
+            <svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19.05l3.97 2.33a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L18 10.79V7.38a2 2 0 0 0-.97-1.71l-4-2.4a2 2 0 0 0-2.06 0l-4 2.4A2 2 0 0 0 6 7.38v3.41Z"/>
+              <path d="M12 22V12"/><path d="m18 10.79-6 3.51-6-3.51"/>
+            </svg>
+            <span class="tab-label">Tech Stack</span>
+          </button>
+        </div>
+
+        <div class="tab-panel active" id="panel-projects">
+          <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+        <div class="tab-panel" id="panel-certificates">
+          <div class="certs-grid" id="certsGrid"></div>
+        </div>
+        <div class="tab-panel" id="panel-tech">
+          <div class="tech-grid" id="techGrid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="Contact" class="section">
+    <div class="container">
+      <div class="section-header reveal" data-reveal="up">
+        <h2 class="section-title grad-text">Hubungi Saya</h2>
+        <p class="section-sub-plain">
+          Punya pertanyaan atau ide proyek? Kirim pesan dan saya akan segera membalas.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card reveal" data-reveal="left">
+          <div class="contact-head">
+            <div>
+              <h3 class="grad-text">Hubungi</h3>
+              <p>Ada yang ingin didiskusikan? Kirim saya pesan dan mari kita bicara.</p>
+            </div>
+          </div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="field"><input type="text" name="name" placeholder="Nama Anda" required></div>
+            <div class="field"><input type="email" name="email" placeholder="Email Anda" required></div>
+            <div class="field"><textarea name="message" placeholder="Pesan Anda" rows="5" required></textarea></div>
+            <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+            <p id="formStatus" class="form-status" role="status"></p>
+          </form>
+
+          <!-- Sosial diisi otomatis dari config.js -->
+          <div class="contact-socials" data-socials></div>
+        </div>
+
+        <div class="contact-info reveal" data-reveal="right">
+          <div class="info-card">
+            <div class="info-icon">✉</div>
+            <div>
+              <p class="info-label">Email</p>
+              <p class="info-value" data-id-email>hello@alexrivera.dev</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">☎</div>
+            <div>
+              <p class="info-label">Phone</p>
+              <p class="info-value" data-id-phone>+62 812 3456 7890</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <div>
+              <p class="info-label">Lokasi</p>
+              <p class="info-value" data-id-location>Jakarta, Indonesia · Remote-friendly</p>
+            </div>
+          </div>
+          <div class="info-card status-card">
+            <div class="info-icon green"><span class="pulse-dot"></span></div>
+            <div>
+              <p class="info-label">Status</p>
+              <p class="info-value">Available for new projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <hr />
+    <p>© <span id="year"></span> <a href="#Home" data-id-brand>AlexRivera</a>™. All Rights Reserved.</p>
+  </footer>
+
+  <button id="toTop" class="to-top" aria-label="Scroll to top">↑</button>
+
+  <!-- Config harus di-load DULU sebelum script.js -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
